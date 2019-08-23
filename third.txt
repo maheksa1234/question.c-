@@ -1,6 +1,6 @@
 #include <stdio.h> 
 
- int josephus(int n, int k)
+ int frustated(int n, int k)
  
 { 
 
@@ -11,7 +11,7 @@
 else
     
    
-    return (josephus(n - 1, k) + k-1) % n + 1;
+    return (frustated(n - 1, k) + k-1) % n + 1;
  
 } 
 
@@ -25,7 +25,7 @@ int main()
   
      int k = 2; 
   
-     printf("The chosen place is %d", josephus(n, k)); 
+     printf("The chosen place is %d", frustated(n, k)); 
  
      return 0; 
 
